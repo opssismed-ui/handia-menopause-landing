@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HANDIA — Paket Menopause Rose V & Menoherb + Konsul Dokter</title>
+<meta name="description" content="Hot flashes, mood naik-turun, area kewanitaan kering? Paket Rose V & Menoherb (BPOM & Halal MUI) bareng konsultasi dokter. Pilih paket sesuai kebutuhan Anda." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#386FFF;
+  --blue-dark:#1F4FD9;
+  --dark:#1A1F36;
+  --gray:#5B6478;
+  --light:#F2F4F8;
+  --green:#16A34A;
+  --warning:#F59E0B;
+  --rose:#E11D74;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;color:var(--dark);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Top urgency bar */
+.urgency-bar{background:var(--rose);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:600;letter-spacing:.2px}
+.urgency-bar span{background:rgba(255,255,255,.18);padding:2px 8px;border-radius:4px;margin-left:6px}
+
+/* NAV */
+nav{background:#fff;padding:14px 0;box-shadow:0 1px 0 rgba(0,0,0,.05);position:sticky;top:0;z-index:50}
+nav .container{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--blue);letter-spacing:.5px}
+.logo img{height:44px;width:auto;display:block}
+footer .logo img{height:54px;filter:brightness(0) invert(1)}
+.nav-cta{background:var(--blue);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:14px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#EAF1FF 0%,#F8FAFF 60%,#fff 100%);padding:60px 0 50px}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #DCE3F5;color:var(--blue);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.eyebrow .dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+h1{font-size:46px;font-weight:800;line-height:1.15;letter-spacing:-.5px;margin-bottom:18px}
+h1 .hl{background:linear-gradient(120deg,transparent 0%,transparent 30%,#FFE066 30%,#FFE066 95%,transparent 95%);padding:0 4px}
+.sub{font-size:18px;color:var(--gray);margin-bottom:28px;max-width:560px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:10px;font-weight:700;font-size:16px;cursor:pointer;border:none;transition:transform .15s ease, box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px -10px rgba(56,111,255,.5)}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 18px -6px rgba(56,111,255,.6)}
+.btn-wa{background:#25D366;color:#fff;box-shadow:0 6px 18px -6px rgba(37,211,102,.6)}
+.btn-ghost{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.trust-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:var(--gray);font-size:13px;font-weight:500}
+.trust-row .stars{color:#FFB400;font-size:16px;letter-spacing:1px}
+.hero-visual{position:relative}
+.hero-card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 30px 60px -25px rgba(31,79,217,.25);border:1px solid #E6ECFA}
+.hero-card-img{aspect-ratio:4/5;background:linear-gradient(135deg,#FFD9E8,#D9E5FF);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:80px;margin-bottom:16px}
+.hero-card h4{font-size:18px;margin-bottom:6px}
+.hero-card p{color:var(--gray);font-size:14px}
+.floating-badge{position:absolute;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 15px 30px -10px rgba(0,0,0,.15);display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600}
+.floating-badge.top-right{top:20px;right:-20px}
+.floating-badge.bottom-left{bottom:auto;top:62%;left:-20px}
+.floating-badge .ic{width:34px;height:34px;border-radius:8px;background:#EAF1FF;display:flex;align-items:center;justify-content:center;font-size:18px}
+
+/* SECTIONS */
+section{padding:72px 0}
+.section-eyebrow{text-align:center;color:var(--blue);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:36px;font-weight:800;text-align:center;line-height:1.2;letter-spacing:-.3px;margin-bottom:14px}
+h2 + .lede{text-align:center;color:var(--gray);font-size:17px;max-width:680px;margin:0 auto 50px}
+
+/* SOCIAL PROOF STRIP */
+.proof-strip{background:#0C1530;color:#fff;padding:28px 0}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.proof-grid .num{font-size:34px;font-weight:800;color:#FFD66B;margin-bottom:4px}
+.proof-grid .lbl{font-size:13px;color:#A8B0C8;font-weight:500}
+
+/* PROBLEM */
+.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:780px;margin:0 auto}
+.problem-card{background:#FFF7F0;border-left:4px solid #F59E0B;padding:18px 22px;border-radius:8px;display:flex;gap:14px;align-items:flex-start}
+.problem-card .x{font-size:22px;flex-shrink:0}
+.problem-card p{font-weight:600;font-size:15px;color:#3D2914}
+
+/* SOLUTION / PRODUCTS */
+.solution{background:var(--light)}
+.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:30px}
+.product-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 4px 20px rgba(31,79,217,.05);border:1px solid #E6ECFA}
+.product-img{aspect-ratio:1;background:linear-gradient(135deg,#FFE5F0,#FFF);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:64px;margin-bottom:18px}
+.product-card.menoherb .product-img{background:linear-gradient(135deg,#E0EAFF,#F8FAFF)}
+.product-card h3{font-size:22px;margin-bottom:6px}
+.product-card .ingredient{color:var(--blue);font-size:13px;font-weight:600;margin-bottom:14px;display:block}
+.product-card ul{list-style:none}
+.product-card li{padding:8px 0;font-size:14px;display:flex;gap:10px;align-items:flex-start;color:#3F4760}
+.product-card li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0}
+
+/* DIFFERENTIATOR */
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.diff-card{text-align:center;padding:24px}
+.diff-icon{width:72px;height:72px;border-radius:18px;background:linear-gradient(135deg,var(--blue),var(--blue-dark));margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;box-shadow:0 10px 25px -10px rgba(56,111,255,.6)}
+.diff-card h4{font-size:18px;margin-bottom:8px}
+.diff-card p{color:var(--gray);font-size:14px}
+
+/* OFFER */
+.offer{background:linear-gradient(135deg,#0C1530 0%,#1F2D5E 100%);color:#fff}
+.offer h2{color:#fff}
+.offer .lede{color:#B8C2E0}
+.pricing-card{max-width:560px;margin:0 auto;background:#fff;color:var(--dark);border-radius:24px;padding:36px;position:relative;box-shadow:0 40px 80px -20px rgba(0,0,0,.5)}
+.best-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--rose);color:#fff;padding:6px 20px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px}
+.pricing-card h3{font-size:26px;text-align:center;margin-bottom:6px}
+.pricing-card .tag{text-align:center;color:var(--gray);font-size:14px;margin-bottom:24px}
+.price-row{text-align:center;margin-bottom:24px}
+.price-old{color:var(--gray);text-decoration:line-through;font-size:20px;margin-right:10px}
+.price-new{font-size:44px;font-weight:800;color:var(--blue)}
+.price-save{display:inline-block;background:#FFE9F2;color:var(--rose);font-size:13px;font-weight:700;padding:4px 12px;border-radius:6px;margin-top:6px}
+.includes{background:#F8FAFF;border-radius:12px;padding:20px;margin-bottom:24px}
+.includes h5{font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;font-weight:600}
+.includes li{list-style:none;padding:7px 0;font-size:14px;display:flex;gap:10px;align-items:flex-start;font-weight:500}
+.includes li::before{content:"✓";color:var(--green);font-weight:800}
+.includes li .bonus{background:#FFE066;color:#7A5C00;font-size:10px;padding:1px 6px;border-radius:4px;margin-left:6px;font-weight:700}
+.cta-stack{display:flex;flex-direction:column;gap:10px}
+.cta-stack .btn{width:100%}
+.guarantee{text-align:center;font-size:13px;color:var(--gray);margin-top:18px;display:flex;align-items:center;justify-content:center;gap:8px}
+
+/* BUNDLE GRID */
+.bundles-wrap{max-width:1000px;margin:0 auto}
+.bundle-featured{background:#fff;color:var(--dark);border-radius:24px;padding:32px;position:relative;box-shadow:0 40px 80px -20px rgba(0,0,0,.5);border:3px solid #FFD66B;margin-bottom:30px}
+.bundle-featured .best-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--rose);color:#fff;padding:6px 20px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px;white-space:nowrap}
+.bundle-featured-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.bundle-featured h3{font-size:24px;margin-bottom:6px}
+.bundle-featured .tag{color:var(--gray);font-size:14px;margin-bottom:18px}
+.bundle-featured .price-row{text-align:left;margin-bottom:18px}
+.bundle-featured .price-old{font-size:18px}
+.bundle-featured .price-new{font-size:38px;display:block;margin-top:4px}
+.bundle-featured .includes{margin-bottom:18px;background:#FFFBEE}
+.bundle-featured .cta-stack{display:flex;flex-direction:column;gap:8px}
+
+.bundle-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.bundle-card{background:#fff;color:var(--dark);border-radius:16px;padding:22px;border:2px solid #E6ECFA;transition:border-color .2s ease, transform .15s ease;display:flex;flex-direction:column}
+.bundle-card:hover{border-color:var(--blue);transform:translateY(-3px)}
+.bundle-card .b-label{display:inline-block;background:#EAF1FF;color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.8px;padding:3px 10px;border-radius:6px;margin-bottom:10px;width:fit-content}
+.bundle-card h4{font-size:17px;margin-bottom:4px;line-height:1.3}
+.bundle-card .bcomp{font-size:13px;color:var(--gray);margin-bottom:14px}
+.bundle-card .bprice{margin-bottom:14px}
+.bundle-card .bprice-old{color:var(--gray);text-decoration:line-through;font-size:13px;margin-right:8px}
+.bundle-card .bprice-new{font-size:24px;font-weight:800;color:var(--blue)}
+.bundle-card .bprice-save{font-size:11px;color:var(--rose);font-weight:700;margin-left:8px;background:#FFE9F2;padding:2px 8px;border-radius:4px}
+.bundle-card .btn-mini{background:#fff;color:var(--blue);border:2px solid var(--blue);padding:10px 16px;border-radius:8px;font-weight:700;font-size:14px;text-align:center;margin-top:auto;transition:all .15s ease}
+.bundle-card .btn-mini:hover{background:var(--blue);color:#fff}
+
+.satuan-note{background:#fff;border:2px dashed #B8C2E0;border-radius:14px;padding:20px 24px;margin-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.satuan-note .stxt h5{font-size:16px;margin-bottom:4px;color:var(--dark)}
+.satuan-note .stxt p{color:var(--gray);font-size:13px}
+.satuan-note .btn{padding:12px 22px;font-size:14px}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testi-card{background:#fff;border:1px solid #E6ECFA;border-radius:16px;padding:24px;display:flex;flex-direction:column}
+.testi-stars{color:#FFB400;margin-bottom:10px;letter-spacing:2px}
+.testi-card p{font-size:14px;color:#3F4760;margin-bottom:16px;flex:1}
+.testi-author{display:flex;align-items:center;gap:12px;border-top:1px solid #F2F4F8;padding-top:14px}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--rose));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.testi-author .name{font-weight:700;font-size:14px}
+.testi-author .meta{font-size:12px;color:var(--gray)}
+
+/* GUARANTEE BLOCK */
+.guarantee-block{background:linear-gradient(135deg,#FFF9E6,#FFFEF7);border:2px dashed #FFB400;border-radius:20px;padding:36px;display:flex;gap:28px;align-items:center;max-width:880px;margin:0 auto}
+.guarantee-seal{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#FFB400,#F59E0B);color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;flex-shrink:0;font-weight:800;text-align:center;line-height:1.1;box-shadow:0 15px 30px -10px rgba(245,158,11,.5)}
+.guarantee-seal .big{font-size:36px}
+.guarantee-seal .sm{font-size:11px;letter-spacing:1px}
+.guarantee-block h3{font-size:24px;margin-bottom:8px}
+.guarantee-block p{color:var(--gray);font-size:15px}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid #E6ECFA;border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:18px 22px;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none}
+.faq-q::after{content:"+";font-size:24px;color:var(--blue);font-weight:400;transition:transform .2s ease}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{padding:0 22px;max-height:0;overflow:hidden;color:var(--gray);font-size:14px;transition:max-height .25s ease, padding .2s ease}
+.faq-item.open .faq-a{padding:0 22px 18px;max-height:400px}
+
+/* FINAL CTA */
+.final-cta{background:var(--blue);color:#fff;text-align:center}
+.final-cta h2{color:#fff}
+.final-cta .lede{color:#D8E2FF}
+.final-cta .btn-wa{font-size:18px;padding:18px 36px}
+.final-cta .stock-note{margin-top:18px;font-size:14px;color:#FFD66B;font-weight:600}
+
+/* STICKY BOTTOM */
+.sticky-bottom{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #E6ECFA;padding:12px 16px;box-shadow:0 -6px 20px rgba(0,0,0,.08);z-index:40;display:none}
+.sticky-bottom .container{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sticky-bottom .price-mini{font-weight:700;font-size:14px}
+.sticky-bottom .price-mini small{display:block;color:var(--gray);text-decoration:line-through;font-weight:500;font-size:12px}
+.sticky-bottom .btn{padding:12px 18px;font-size:14px}
+
+/* FOOTER */
+footer{background:#0C1530;color:#A8B0C8;padding:50px 0 24px;font-size:13px}
+footer .logo{color:#fff;margin-bottom:12px}
+footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:30px}
+footer a{display:block;padding:4px 0;color:#A8B0C8}
+footer a:hover{color:#fff}
+footer h5{color:#fff;font-size:14px;margin-bottom:14px}
+.footer-bottom{border-top:1px solid #1F2D5E;padding-top:20px;text-align:center;font-size:12px}
+
+/* RESPONSIVE */
+@media (max-width:860px){
+  h1{font-size:34px}
+  h2{font-size:28px}
+  .hero{padding:40px 0 30px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-visual{order:-1;max-width:340px;margin:0 auto}
+  .floating-badge.top-right{right:0}
+  .floating-badge.bottom-left{left:0}
+  .proof-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+  .problem-grid,.product-grid,.diff-grid,.testi-grid{grid-template-columns:1fr}
+  .guarantee-block{flex-direction:column;text-align:center;padding:28px 20px}
+  footer .footer-grid{grid-template-columns:1fr;gap:24px}
+  .nav-cta{display:none}
+  .sticky-bottom{display:block}
+  body{padding-bottom:80px}
+  section{padding:50px 0}
+  .pricing-card{padding:28px 22px}
+  .price-new{font-size:36px}
+  .bundle-featured-grid{grid-template-columns:1fr;gap:20px}
+  .bundle-grid{grid-template-columns:1fr}
+  .bundle-featured{padding:24px 20px}
+  .satuan-note{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP URGENCY -->
+<div class="urgency-bar">
+  🔥 PROMO LAUNCHING HANDIA — Pilih paket sesuai kebutuhan, sudah termasuk konsultasi dokter <span>Berakhir 31 Mei</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <a href="#" class="logo"><img src="Logo handia/Handia Logo Color Vertical BG Transparan.png" alt="HANDIA"/></a>
+    <a href="#offer" class="nav-cta">Lihat Penawaran</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Produk laris di Shopee — kini hadir di HANDIA + konsul dokter</div>
+      <h1>Lewati Menopause <span class="hl">Tanpa Drama</span> — Tidur Nyenyak, Mood Stabil, Tetap Mesra.</h1>
+      <p class="sub">Pilih paket Rose V & Menoherb (BPOM & Halal MUI) sesuai kebutuhan Anda — semua sudah <strong>termasuk konsultasi dokter ahli</strong>. Yang bikin beda dari beli online: dosis ditentuin dokter, ga tebak-tebakan.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20info%20Paket%20Harmonis" class="btn btn-wa">
+          💬 Chat WhatsApp Sekarang
+        </a>
+        <a href="#offer" class="btn btn-ghost">Lihat Paket & Harga</a>
+      </div>
+      <div class="trust-row">
+        <span class="stars">★★★★★</span>
+        <span><strong>4.9/5</strong> rating Shopee</span>
+        <span>•</span>
+        <span>✓ BPOM & Halal MUI</span>
+        <span>•</span>
+        <span>✓ COD Tersedia</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-img" style="background:#fff;padding:0;aspect-ratio:auto;overflow:hidden">
+          <img src="Image/Hero Pamflet Duo.png" alt="Rose V & Menoherb — Solusi Menopause HANDIA" style="width:100%;height:auto;display:block;border-radius:12px"/>
+        </div>
+        <h4>5 Pilihan Paket + Satuan</h4>
+        <p>Dari Rp 339.000 — semua sudah termasuk konsultasi dokter privat</p>
+      </div>
+      <div class="floating-badge top-right">
+        <div class="ic">✅</div>
+        <div>100% Original<br><span style="color:var(--gray);font-weight:500;font-size:11px">BPOM & Halal MUI</span></div>
+      </div>
+      <div class="floating-badge bottom-left">
+        <div class="ic">👩‍⚕️</div>
+        <div>Didampingi Dokter<br><span style="color:var(--gray);font-weight:500;font-size:11px">Konsul inklusif di semua paket</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip">
+  <div class="container proof-grid">
+    <div><div class="num">10rb+</div><div class="lbl">Terjual di Shopee</div></div>
+    <div><div class="num">4.9★</div><div class="lbl">Rating Marketplace</div></div>
+    <div><div class="num">BPOM</div><div class="lbl">& Halal MUI</div></div>
+    <div><div class="num">2x</div><div class="lbl">Konsul Dokter Inklusif</div></div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">Pernah ngerasain ini?</div>
+    <h2>Tidur Ga Nyenyak, Mood Berantakan, Suami Mulai Jaga Jarak?</h2>
+    <p class="lede">Bukan salah Anda. Hormon estrogen yang menurun bikin tubuh "berontak". Tapi Anda <strong>ga harus terima begitu aja</strong>.</p>
+    <div class="problem-grid">
+      <div class="problem-card"><div class="x">🥵</div><p>Tiba-tiba kepanasan & keringetan di malam hari (hot flashes) — tidur pun terganggu.</p></div>
+      <div class="problem-card"><div class="x">😤</div><p>Mood gampang banget naik-turun, sensitif, sampai bertengkar sama keluarga.</p></div>
+      <div class="problem-card"><div class="x">🌵</div><p>Area kewanitaan terasa kering, hubungan intim jadi sakit & ga nyaman.</p></div>
+      <div class="problem-card"><div class="x">💔</div><p>Gairah menurun drastis, percaya diri ikut turun, suami mulai terasa jauh.</p></div>
+      <div class="problem-card"><div class="x">😰</div><p>Siklus haid berantakan, kadang deras kadang ilang berbulan-bulan.</p></div>
+      <div class="problem-card"><div class="x">😔</div><p>Coba berbagai produk tapi ga ada yang cocok — udah skeptis sama "obat herbal".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="solution">
+  <div class="container">
+    <div class="section-eyebrow">Solusi dari HANDIA</div>
+    <h2>2 Produk Herbal Best-Seller + Dokter yang Dampingi Anda</h2>
+    <p class="lede">Rose V & Menoherb sudah <strong>terjual lebih dari 10.000 box di Shopee</strong> dengan rating 4.9★. Sekarang HANDIA bundling dengan konsultasi dokter — supaya dosisnya tepat, bukan tebak-tebakan.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img" style="background:#fff;padding:16px"><img src="Image/Rose V Hero.png" alt="Rose V Sachet" style="width:100%;height:100%;object-fit:contain"/></div>
+        <h3>Rose V Sachet <span style="font-size:13px;color:var(--gray);font-weight:500">(Harga: Rp 210.000/box)</span></h3>
+        <span class="ingredient">Manjakani • Kacip Fatimah • Daun Sirih • Kunci Pepet</span>
+        <ul>
+          <li>Menyeimbangkan pH area kewanitaan, hilangkan bau tak sedap</li>
+          <li>Merapatkan otot organ intim — bantu kepercayaan diri & keharmonisan</li>
+          <li>Membersihkan rahim dari keputihan berlebih</li>
+          <li>Diminum praktis (sachet), rasa segar, ga bikin enek</li>
+        </ul>
+      </div>
+      <div class="product-card menoherb">
+        <div class="product-img" style="background:#fff;padding:16px"><img src="Image/Menoherb Hero.png" alt="Menoherb Kapsul" style="width:100%;height:100%;object-fit:contain"/></div>
+        <h3>Menoherb Kapsul <span style="font-size:13px;color:var(--gray);font-weight:500">(Harga: Rp 336.000/botol)</span></h3>
+        <span class="ingredient">Pueraria Mirifica • Centella Asiatica</span>
+        <ul>
+          <li>Phytoestrogen alami — atasi hot flashes & keringat malam</li>
+          <li>Stabilkan mood, kurangi mudah marah & sensitif</li>
+          <li>Jaga elastisitas kulit & kekenyalan tubuh</li>
+          <li>Bantu kualitas tidur — bangun lebih segar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATOR -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">Beda HANDIA vs beli online biasa</div>
+    <h2>Produknya Sama Bagusnya — Tapi di Sini Anda Ga Sendirian</h2>
+    <p class="lede">Beli di marketplace? Tinggal checkout. Salah dosis, ga ngefek, kapok. Di HANDIA, kami pastiin pemakaiannya benar dari hari pertama.</p>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="diff-icon">👩‍⚕️</div>
+        <h4>2x Konsul Dokter Inklusif</h4>
+        <p>Sesi awal: dokter tentuin dosis sesuai kondisi Anda. Sesi follow-up: evaluasi hasil & sesuaikan. Senilai Rp 100.000, gratis di paket ini.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon">🛡️</div>
+        <h4>100% Original BPOM</h4>
+        <p>Stok langsung dari distributor resmi pabrik. Nomor BPOM bisa dicek di cekbpom.pom.go.id. Bukan reseller, bukan KW.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon">🤝</div>
+        <h4>Jaminan Original</h4>
+        <p>Kalau produk yang sampai ternyata kemasan rusak atau terbukti palsu, kami ganti dengan yang baru. Tanpa drama.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="solution">
+  <div class="container">
+    <div class="section-eyebrow">Review pengguna Rose V & Menoherb</div>
+    <h2>Track Record di Marketplace — 10.000+ Box Terjual</h2>
+    <p class="lede">Cuplikan review pembeli Rose V & Menoherb di Shopee. HANDIA menjual produk yang sama dari distributor resmi, plus konsultasi dokter.</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Minggu pertama tidur udah lebih nyenyak. Bulan kedua hot flashes-nya jauh berkurang. Suami juga bilang aku lebih 'tenang'."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S***</div>
+          <div><div class="name">Pembeli Menoherb</div><div class="meta">Review Shopee • Rating 5★</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Pakai Rose V hampir 1 bulan, keputihan jauh berkurang, area kewanitaan ga gatel & ga bau. Suami juga ngerasa beda. Pasti repeat."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">D***</div>
+          <div><div class="name">Pembeli Rose V</div><div class="meta">Review Shopee • Rating 5★</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Awalnya coba karena gampang sakit kepala & mood gampang naik. Setelah pakai 2 bulanan ngerasa lebih stabil. Recommended."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">Y***</div>
+          <div><div class="name">Pembeli Menoherb</div><div class="meta">Review Shopee • Rating 5★</div></div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--gray);margin-top:24px;font-style:italic">*Cuplikan review pembeli produk Rose V & Menoherb di Shopee. Hasil setiap orang dapat berbeda. HANDIA menambahkan layanan konsul dokter agar dosis tepat sesuai kondisi Anda.</p>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer" id="offer">
+  <div class="container">
+    <div class="section-eyebrow" style="color:#FFD66B">Penawaran Launching HANDIA</div>
+    <h2>Pilih Paket Sesuai Kebutuhan Anda</h2>
+    <p class="lede">5 pilihan paket — semua sudah termasuk konsultasi dokter. Bingung pilih yang mana? Konsultasi dulu, dokter yang rekomendasiin.</p>
+
+    <div class="bundles-wrap">
+
+      <!-- FEATURED / RECOMMENDED -->
+      <div class="bundle-featured">
+        <div class="best-badge">⭐ PALING DIPILIH</div>
+        <div class="bundle-featured-grid">
+          <div>
+            <h3>Paket Harmonis</h3>
+            <div class="tag">Solusi lengkap — atasi keluhan kewanitaan & hormon sekaligus, plus follow-up dokter</div>
+            <div class="price-row">
+              <span class="price-old">Rp 856.000</span>
+              <span class="price-new">Rp 699.000</span>
+              <div class="price-save">HEMAT Rp 157.000</div>
+            </div>
+            <div class="cta-stack">
+              <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Harmonis%20(2%20Rose%20V%20%2B%20Menoherb%20%2B%202%20konsul)" class="btn btn-wa">💬 Pesan Paket Harmonis</a>
+              <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20konsul%20dokter%20dulu" class="btn btn-primary">📞 Konsul Dokter Dulu</a>
+            </div>
+          </div>
+          <div class="includes" style="margin-bottom:0">
+            <h5>Yang Anda Dapatkan:</h5>
+            <ul>
+              <li>Rose V Sachet — <strong>2 Box</strong></li>
+              <li>Menoherb Kapsul — <strong>1 Botol</strong></li>
+              <li>Konsultasi Dokter — <strong>2x sesi</strong> (awal & follow-up) <span class="bonus">INKLUSIF</span></li>
+              <li>E-book Pola Makan Menopause <span class="bonus">BONUS</span></li>
+              <li>Grup WA support pengguna <span class="bonus">BONUS</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 ALTERNATIVES -->
+      <div class="bundle-grid">
+
+        <div class="bundle-card">
+          <div class="b-label">FOKUS HORMON</div>
+          <h4>Paket Mood Stabil</h4>
+          <div class="bcomp">2× Menoherb + 2× konsul dokter</div>
+          <div class="bprice">
+            <span class="bprice-old">Rp 772.000</span>
+            <span class="bprice-new">Rp 649.000</span>
+            <span class="bprice-save">Hemat 123rb</span>
+          </div>
+          <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Cocok untuk Anda yang fokus atasi hot flashes, mood swing, & kualitas tidur.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Mood%20Stabil%20(2%20Menoherb%20%2B%202%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
+        </div>
+
+        <div class="bundle-card">
+          <div class="b-label">STARTER COMBO</div>
+          <h4>Paket Coba Lengkap</h4>
+          <div class="bcomp">1× Rose V + 1× Menoherb + 1× konsul</div>
+          <div class="bprice">
+            <span class="bprice-old">Rp 596.000</span>
+            <span class="bprice-new">Rp 499.000</span>
+            <span class="bprice-save">Hemat 97rb</span>
+          </div>
+          <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Mau coba dua-duanya dulu? Paket starter untuk 1 bulan.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Coba%20Lengkap%20(Rose%20V%20%2B%20Menoherb%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
+        </div>
+
+        <div class="bundle-card">
+          <div class="b-label">FOKUS KEWANITAAN</div>
+          <h4>Paket Intimate Care</h4>
+          <div class="bcomp">2× Rose V + 1× konsul dokter</div>
+          <div class="bprice">
+            <span class="bprice-old">Rp 470.000</span>
+            <span class="bprice-new">Rp 399.000</span>
+            <span class="bprice-save">Hemat 71rb</span>
+          </div>
+          <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Fokus area kewanitaan: pH seimbang, keputihan & bau berkurang.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Intimate%20Care%20(2%20Rose%20V%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
+        </div>
+
+        <div class="bundle-card">
+          <div class="b-label">PALING TERJANGKAU</div>
+          <h4>Paket Pemula Menoherb</h4>
+          <div class="bcomp">1× Menoherb + 1× konsul dokter</div>
+          <div class="bprice">
+            <span class="bprice-old">Rp 386.000</span>
+            <span class="bprice-new">Rp 339.000</span>
+            <span class="bprice-save">Hemat 47rb</span>
+          </div>
+          <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Mulai dari yang ringan — Menoherb 1 botol untuk uji cocok 1 bulan.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Pemula%20Menoherb%20(1%20Menoherb%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
+        </div>
+
+      </div>
+
+      <!-- SATUAN OPTION -->
+      <div class="satuan-note">
+        <div class="stxt">
+          <h5>📦 Mau beli satuan aja? Bisa.</h5>
+          <p>Rose V: Rp 210.000/box • Menoherb: Rp 336.000/botol • Konsultasi dokter: Rp 50.000/sesi. Chat WA, kami layanin pesanan satuan juga.</p>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20beli%20satuan" class="btn btn-primary">💬 Tanya Satuan</a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:30px;color:#FFD66B;font-weight:600;font-size:14px">
+      ⚠️ Harga promo launching berlaku sampai 31 Mei.
+    </p>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section>
+  <div class="container">
+    <div class="guarantee-block">
+      <div class="guarantee-seal">
+        <div class="big">100%</div>
+        <div class="sm">ORIGINAL<br>BPOM</div>
+      </div>
+      <div>
+        <h3>Jaminan Original — Diskusi Sampai Paham</h3>
+        <p>Rose V & Menoherb yang Anda terima 100% original dari distributor resmi. Nomor BPOM bisa dicek langsung di <strong>cekbpom.pom.go.id</strong>. Kemasan rusak atau bukti palsu? Kami ganti baru. Plus: <strong>2x sesi konsul dokter</strong> tanpa biaya tambahan — biar dosisnya pas dengan kondisi Anda, bukan sekali jawab terus selesai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="solution">
+  <div class="container">
+    <div class="section-eyebrow">Masih ragu?</div>
+    <h2>Pertanyaan yang Sering Ditanya</h2>
+    <p class="lede">Kami jawab jujur, ga muter-muter.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Apakah aman dikonsumsi bareng obat dokter saya?</div>
+        <div class="faq-a"><p>Justru itu kenapa kami sertakan konsul dokter di paket. Dokter kami akan tanya riwayat obat Anda (hipertensi, diabetes, dll) dan tentukan kombinasi yang aman. Sudah termasuk paket, ga ada biaya tambahan.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Bedanya beli di sini sama beli di Shopee apa?</div>
+        <div class="faq-a"><p>Produknya sama persis (kami ambil dari distributor resmi yang sama). Bedanya: di sini Anda dapat <strong>2x konsultasi dokter</strong> — sesi awal buat tentuin dosis, sesi follow-up buat evaluasi hasil setelah 1 bulan. Banyak yang beli online ga ngerasa manfaat karena dosis & cara minumnya salah.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Berapa lama baru terasa hasilnya?</div>
+        <div class="faq-a"><p>Berdasarkan review pengguna di marketplace, perubahan tidur biasanya 1-2 minggu, hot flashes & mood 3-4 minggu. Hasil maksimal umumnya di bulan ke-2. Konsisten = kunci, makanya paket ini dirancang untuk pemakaian 2 bulan.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Saya udah 55 tahun, masih cocok ga?</div>
+        <div class="faq-a"><p>Cocok. Produk ini dirancang untuk perimenopause sampai pasca-menopause (umumnya 40-60+). Dokter akan sesuaikan dosis dengan kondisi & usia Anda di sesi konsul awal.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Bisa COD? Berapa lama pengirimannya?</div>
+        <div class="faq-a"><p>Bisa COD ke seluruh Indonesia (cek ongkir saat chat WA). Pengiriman pakai JNE/J&T/SiCepat — estimasi <strong>2–4 hari kerja</strong> setelah order dikonfirmasi, tergantung kota tujuan. Update resi dikirim via WA.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Gimana cara mastiin produknya original?</div>
+        <div class="faq-a"><p>Setiap box ada nomor BPOM resmi — bisa Anda cek langsung di <strong>cekbpom.pom.go.id</strong>. Kami juga sertakan invoice & nota pembelian dari HANDIA. Kalau ada tanda kemasan rusak atau mencurigakan saat barang sampai, foto & chat kami, langsung ganti.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Konsul dokternya gimana cara kerjanya?</div>
+        <div class="faq-a"><p>Konsul dilakukan secara <strong>online via WhatsApp / Video Call</strong> dengan dokter mitra HANDIA. Privat, 1-on-1. Jadwal fleksibel sesuai waktu Anda. Sesi pertama biasanya dijadwalkan dalam 1–2 hari setelah order dikonfirmasi.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Sampai kapan promo launching berlaku?</div>
+        <div class="faq-a"><p>Promo launching HANDIA berlaku sampai 31 Mei. Setelah tanggal itu, harga balik ke harga normal masing-masing paket.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Hidup Tenang Tanpa Drama Menopause — Mulai Hari Ini</h2>
+    <p class="lede">Produk yang sama dengan yang udah 10.000+ box terjual di Shopee, plus dokter yang dampingi Anda. Mulai dari Rp 339.000.</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20konsultasi%20%26%20pilih%20paket" class="btn btn-wa" style="margin-top:16px">
+      💬 Chat WhatsApp — Konsul & Pilih Paket
+    </a>
+    <div class="stock-note">⚠️ Promo launching berlaku sampai 31 Mei</div>
+  </div>
+</section>
+
+<!-- STICKY -->
+<div class="sticky-bottom">
+  <div class="container">
+    <div class="price-mini">
+      Mulai Rp 339rb
+      <small>5 paket pilihan</small>
+    </div>
+    <a href="https://wa.me/6281234567890?text=Halo%20HANDIA%2C%20saya%20mau%20info%20paket%20%26%20konsul%20dokter" class="btn btn-wa">💬 Chat & Pilih Paket</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px"><img src="Logo handia/Handia Logo Color Vertical BG Transparan.png" alt="HANDIA"/></div>
+        <p style="max-width:340px;line-height:1.7">Handy healthcare untuk wanita Indonesia. Produk teruji BPOM, didampingi tenaga medis profesional.</p>
+      </div>
+      <div>
+        <h5>Navigasi</h5>
+        <a href="#offer">Paket Harmonis</a>
+        <a href="#">Konsultasi Dokter</a>
+        <a href="#">Jaminan Original</a>
+      </div>
+      <div>
+        <h5>Kontak</h5>
+        <a href="https://wa.me/6281234567890">WhatsApp: 0812-3456-7890</a>
+        <a href="mailto:halo@handia.id">halo@handia.id</a>
+        <a href="#">Senin–Sabtu, 08:00–20:00 WIB</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 HANDIA by SISMED. BPOM TR.XXX.XXX.XXX • Halal MUI</div>
+  </div>
+</footer>
+
+<script>
+// FAQ toggle
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
+});
+</script>
+</body>
+</html>
