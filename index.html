@@ -263,7 +263,7 @@ h2 + .lede{text-align:center;color:var(--gray);font-size:17px;max-width:680px;ma
 .final-cta .stock-note{margin-top:20px;font-size:14px;color:#FFD66B;font-weight:600}
 
 /* FLOATING WA BUTTON */
-.float-wa{position:fixed;right:22px;bottom:90px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25D366,#1FBA5A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 15px 35px -8px rgba(37,211,102,.55);z-index:45;cursor:pointer;transition:transform .25s ease, box-shadow .3s ease;animation:pulse-ring 2.4s ease-out infinite}
+.float-wa{position:fixed;right:24px;bottom:24px;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#25D366,#1FBA5A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 15px 35px -8px rgba(37,211,102,.55);z-index:45;cursor:pointer;transition:transform .25s ease, box-shadow .3s ease;animation:pulse-ring 2.4s ease-out infinite}
 .float-wa:hover{transform:scale(1.08);box-shadow:0 20px 45px -8px rgba(37,211,102,.7)}
 .float-wa svg{width:32px;height:32px;fill:#fff}
 
@@ -293,29 +293,108 @@ footer a:hover{color:#fff;transform:translateX(3px)}
 footer h5{color:#fff;font-size:14px;margin-bottom:14px}
 .footer-bottom{border-top:1px solid #1F2D5E;padding-top:22px;text-align:center;font-size:12px}
 
-/* RESPONSIVE */
-@media (max-width:860px){
-  h1{font-size:34px}
-  h2{font-size:28px}
-  .hero{padding:40px 0 30px}
-  .hero-grid{grid-template-columns:1fr;gap:30px}
-  .hero-visual{order:-1;max-width:340px;margin:0 auto}
-  .floating-badge.top-right{right:0}
-  .floating-badge.bottom-left{left:0}
-  .proof-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+/* RESPONSIVE — TABLET */
+@media (max-width:980px){
+  .container{padding:0 18px}
+  h1{font-size:38px}
+  h2{font-size:30px}
+  .hero-grid{gap:36px}
+  .proof-grid .num{font-size:30px}
+}
+
+/* RESPONSIVE — MOBILE */
+@media (max-width:768px){
+  h1{font-size:29px;line-height:1.18;letter-spacing:-.3px}
+  h2{font-size:24px;line-height:1.25}
+  h2 + .lede{font-size:15px;margin-bottom:34px}
+  .sub{font-size:15.5px;margin-bottom:24px;max-width:none}
+  .eyebrow{font-size:11.5px;padding:6px 13px;margin-bottom:14px}
+  section{padding:46px 0}
+  .container{padding:0 16px}
+
+  /* HERO */
+  .hero{padding:30px 0 28px}
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .hero-visual{order:-1;max-width:330px;margin:0 auto}
+  .hero-card{padding:16px;border-radius:22px;animation:none}
+  .hero-card h4{font-size:16px}
+  .hero-card p{font-size:13px}
+  .hero-cta{gap:10px;margin-bottom:18px}
+  .btn{padding:15px 22px;font-size:15px;width:100%}
+  .hero-cta .btn{flex:1 1 100%}
+  .trust-row{gap:10px 14px;font-size:12px}
+
+  /* Hide hero floating badges on mobile — they overlap content */
+  .floating-badge{display:none}
+
+  /* PROOF STRIP */
+  .proof-strip{padding:26px 0}
+  .proof-grid{grid-template-columns:repeat(2,1fr);gap:22px 16px}
+  .proof-grid .num{font-size:28px}
+  .proof-grid .lbl{font-size:12px}
+
+  /* GRIDS to single column */
   .problem-grid,.product-grid,.diff-grid,.testi-grid{grid-template-columns:1fr}
-  .guarantee-block{flex-direction:column;text-align:center;padding:28px 20px}
-  footer .footer-grid{grid-template-columns:1fr;gap:24px}
+  .problem-card{padding:16px 18px}
+  .problem-card p{font-size:14px}
+  .product-card{padding:22px}
+  .diff-card{padding:24px 20px}
+
+  /* OFFER / BUNDLES */
+  .bundle-featured{padding:26px 18px;border-radius:22px}
+  .bundle-featured-grid{grid-template-columns:1fr;gap:20px}
+  .bundle-featured h3{font-size:22px}
+  .bundle-featured .best-badge{font-size:11px;padding:7px 16px;letter-spacing:.8px}
+  .bundle-featured .price-new{font-size:36px}
+  .bundle-grid{grid-template-columns:1fr;gap:14px}
+  .bundle-card{padding:22px}
+  .satuan-note{flex-direction:column;text-align:center;padding:20px}
+  .satuan-note .btn{width:100%}
+  .includes{padding:18px}
+
+  /* GUARANTEE */
+  .guarantee-block{flex-direction:column;text-align:center;padding:28px 22px;gap:20px}
+  .guarantee-seal{width:108px;height:108px}
+  .guarantee-seal .big{font-size:32px}
+  .guarantee-block h3{font-size:21px}
+  .guarantee-block p{font-size:14px}
+
+  /* FAQ */
+  .faq-q{padding:16px 18px;font-size:14px}
+  .faq-a{padding:0 18px}
+  .faq-item.open .faq-a{padding:2px 18px 16px}
+
+  /* FOOTER */
+  footer{padding:44px 0 24px}
+  footer .footer-grid{grid-template-columns:1fr;gap:26px}
+
+  /* NAV + STICKY */
   .nav-cta{display:none}
   .sticky-bottom{display:block}
-  body{padding-bottom:80px}
-  section{padding:50px 0}
-  .pricing-card{padding:28px 22px}
-  .price-new{font-size:36px}
-  .bundle-featured-grid{grid-template-columns:1fr;gap:20px}
-  .bundle-grid{grid-template-columns:1fr}
-  .bundle-featured{padding:24px 20px}
-  .satuan-note{flex-direction:column;text-align:center}
+  body{padding-bottom:76px}
+
+  /* Hide floating WA on mobile — sticky bar already has WA button */
+  .float-wa{display:none}
+
+  /* Toast: smaller, sits just above sticky bar, won't cover much */
+  .toast{left:12px;right:12px;bottom:84px;max-width:none;padding:10px 14px;border-radius:12px}
+  .toast .t-ic{width:34px;height:34px;font-size:16px}
+  .toast .t-txt{font-size:12px}
+
+  /* Countdown timer a touch smaller */
+  .urgency-bar{font-size:12.5px;padding:9px 12px}
+  .urgency-bar span.timer{margin-left:8px;gap:3px}
+  .urgency-bar span.timer b{min-width:30px;padding:3px 6px}
+}
+
+/* RESPONSIVE — SMALL PHONES */
+@media (max-width:400px){
+  h1{font-size:26px}
+  h2{font-size:22px}
+  .proof-grid .num{font-size:25px}
+  .bundle-featured .price-new{font-size:32px}
+  .urgency-bar{font-size:11.5px}
+  .urgency-bar span.timer b{min-width:27px;padding:2px 5px;font-size:12px}
 }
 </style>
 </head>
@@ -365,7 +444,7 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
           <img src="Image/Hero Pamflet Duo.png" alt="Rose V & Menoherb — Solusi Menopause HANDIA" style="width:100%;height:auto;display:block;border-radius:12px"/>
         </div>
         <h4>5 Pilihan Paket + Satuan</h4>
-        <p>Dari Rp 339.000 — semua sudah termasuk konsultasi dokter privat</p>
+        <p>Dari Rp 359.000 — semua sudah termasuk konsultasi dokter privat</p>
       </div>
       <div class="floating-badge top-right">
         <div class="ic">✅</div>
@@ -519,8 +598,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
             <div class="tag">Solusi lengkap — atasi keluhan kewanitaan & hormon sekaligus, plus follow-up dokter</div>
             <div class="price-row">
               <span class="price-old">Rp 856.000</span>
-              <span class="price-new">Rp 699.000</span>
-              <div class="price-save">HEMAT Rp 157.000</div>
+              <span class="price-new">Rp 789.000</span>
+              <div class="price-save">HEMAT Rp 67.000</div>
             </div>
             <div class="cta-stack">
               <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Harmonis%20(2%20Rose%20V%20%2B%20Menoherb%20%2B%202%20konsul)" class="btn btn-wa">💬 Pesan Paket Harmonis</a>
@@ -547,8 +626,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
           <div class="bcomp">2× Menoherb + 2× konsul dokter</div>
           <div class="bprice">
             <span class="bprice-old">Rp 772.000</span>
-            <span class="bprice-new">Rp 649.000</span>
-            <span class="bprice-save">Hemat 123rb</span>
+            <span class="bprice-new">Rp 715.000</span>
+            <span class="bprice-save">Hemat 57rb</span>
           </div>
           <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Cocok untuk Anda yang fokus atasi hot flashes, mood swing, & kualitas tidur.</p>
           <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Mood%20Stabil%20(2%20Menoherb%20%2B%202%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
@@ -560,8 +639,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
           <div class="bcomp">1× Rose V + 1× Menoherb + 1× konsul</div>
           <div class="bprice">
             <span class="bprice-old">Rp 596.000</span>
-            <span class="bprice-new">Rp 499.000</span>
-            <span class="bprice-save">Hemat 97rb</span>
+            <span class="bprice-new">Rp 549.000</span>
+            <span class="bprice-save">Hemat 47rb</span>
           </div>
           <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Mau coba dua-duanya dulu? Paket starter untuk 1 bulan.</p>
           <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Coba%20Lengkap%20(Rose%20V%20%2B%20Menoherb%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
@@ -573,8 +652,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
           <div class="bcomp">2× Rose V + 1× konsul dokter</div>
           <div class="bprice">
             <span class="bprice-old">Rp 470.000</span>
-            <span class="bprice-new">Rp 399.000</span>
-            <span class="bprice-save">Hemat 71rb</span>
+            <span class="bprice-new">Rp 439.000</span>
+            <span class="bprice-save">Hemat 31rb</span>
           </div>
           <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Fokus area kewanitaan: pH seimbang, keputihan & bau berkurang.</p>
           <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Intimate%20Care%20(2%20Rose%20V%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
@@ -586,8 +665,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
           <div class="bcomp">1× Menoherb + 1× konsul dokter</div>
           <div class="bprice">
             <span class="bprice-old">Rp 386.000</span>
-            <span class="bprice-new">Rp 339.000</span>
-            <span class="bprice-save">Hemat 47rb</span>
+            <span class="bprice-new">Rp 359.000</span>
+            <span class="bprice-save">Hemat 27rb</span>
           </div>
           <p style="font-size:13px;color:var(--gray);margin-bottom:14px">Mulai dari yang ringan — Menoherb 1 botol untuk uji cocok 1 bulan.</p>
           <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20pesan%20Paket%20Pemula%20Menoherb%20(1%20Menoherb%20%2B%201%20konsul)" class="btn-mini">💬 Pesan Paket Ini</a>
@@ -675,7 +754,7 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
 <section class="final-cta">
   <div class="container">
     <h2>Hidup Tenang Tanpa Drama Menopause — Mulai Hari Ini</h2>
-    <p class="lede">Produk yang sama dengan yang udah 10.000+ box terjual di Shopee, plus dokter yang dampingi Anda. Mulai dari Rp 339.000.</p>
+    <p class="lede">Produk yang sama dengan yang udah 10.000+ box terjual di Shopee, plus dokter yang dampingi Anda. Mulai dari Rp 359.000.</p>
     <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20konsultasi%20%26%20pilih%20paket" class="btn btn-wa" style="margin-top:16px">
       💬 Chat WhatsApp — Konsul & Pilih Paket
     </a>
@@ -687,7 +766,7 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
 <div class="sticky-bottom">
   <div class="container">
     <div class="price-mini">
-      Mulai Rp 339rb
+      Mulai Rp 359rb
       <small>5 paket pilihan</small>
     </div>
     <a href="https://wa.me/6285111139936?text=Halo%20HANDIA%2C%20saya%20mau%20info%20paket%20%26%20konsul%20dokter" class="btn btn-wa">💬 Chat & Pilih Paket</a>
@@ -810,12 +889,6 @@ window.addEventListener('scroll',()=>{
   if(!tStarted&&window.scrollY>500){tStarted=true;setTimeout(showToast,2000)}
 },{passive:true,once:false});
 
-// Hide floating WA when sticky bottom shown (mobile)
-function adjustFloatWa(){
-  const fw=document.getElementById('floatWa');
-  if(window.innerWidth<=860)fw.style.bottom='90px';else fw.style.bottom='22px';
-}
-adjustFloatWa();window.addEventListener('resize',adjustFloatWa);
 </script>
 </body>
 </html>
