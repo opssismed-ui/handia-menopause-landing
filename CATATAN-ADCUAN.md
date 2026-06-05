@@ -119,14 +119,23 @@ User klik tombol
 
 ---
 
-## Status di `index.html`
+## Status di `index.html` — ✅ TERPASANG (6 Juni 2026)
 
-- [x] Script `code.js` sudah di `<head>`.
-- [x] Keputusan: **GRANULAR — 8 link per-paket** (lihat tabel pesan pembuka).
-- [ ] Link tombol — MASIH `wa.me/6285111399936` (belum diganti ke Adcuan).
-      NUNGGU: Mas Farhan/Akmal bikin 8 CTA di dashboard Adcuan + kirim 8 URL final.
-      Setelah URL masuk → wire 12 tombol sesuai mapping (5 general pakai link #1,
-      sisanya per-paket).
+- [x] 8 script `code.js?nomor=1..8` di `<head>`.
+- [x] Keputusan: **GRANULAR — 8 link per-paket**.
+- [x] 12 tombol sudah di-wire ke link Adcuan (param `?text` dibuang, pesan pembuka
+      di-handle Adcuan):
+  - `854-1` (general) → Hero, Final CTA, Sticky bar, Footer, Float WA (5 tombol)
+  - `854-2` → Pesan Paket Harmonis
+  - `854-3` → Konsul Dokter Dulu
+  - `854-4` → Pesan Paket Mood Stabil
+  - `854-5` → Pesan Paket Coba Lengkap
+  - `854-6` → Pesan Paket Intimate Care
+  - `854-7` → Pesan Paket Pemula Menoherb
+  - `854-8` → Tanya Satuan
+
+> Tombol "Lihat Paket & Harga" di hero TIDAK diubah (itu anchor scroll ke #offer,
+> bukan tombol WA).
 
 ## Yang Perlu Disiapkan Mas Farhan / Akmal di Dashboard Adcuan
 
