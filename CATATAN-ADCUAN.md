@@ -144,6 +144,30 @@ User klik tombol
    + **pesan pembuka** masing-masing sesuai tabel di atas.
 3. Kasih daftar link final ke yang ngedit `index.html` buat dipasang ke tombol.
 
+## Cara Tes yang BENAR (penting!)
+
+Kalau pencet Float WA / Hero / Sticky / Footer → pesannya **SAMA SEMUA** (itu
+normal, semua = link general `854-1`). Itu BUKAN bug.
+
+Buat liat pesan beda per paket, pencet tombol di **kartu paket** (section
+"Pilih Paket Sesuai Kebutuhan"):
+- "💬 Pesan Paket Harmonis" → pesan Harmonis
+- "💬 Pesan Paket Ini" di kartu Mood Stabil → pesan Mood Stabil
+- dst.
+
+Tiap kartu paket = pesan beda. Udah diverifikasi 6 Juni 2026 (redirect Adcuan
+beda-beda per CTA). ✅
+
+## 2 Hal yang Diatur di DASHBOARD Adcuan (bukan di kode)
+
+1. **Rotasi / sebar nomor CS.** Saat ini semua 8 CTA → 1 nomor (`6285111399936`).
+   Kalau mau lead dibagi ke beberapa nomor sales, tambah nomor per CTA di dashboard
+   Adcuan. Kode LP ga ngatur ini.
+
+2. **Tag `ID [...]` di awal pesan.** Tiap pesan customer diawali `ID [kode]` —
+   itu tag attribution Adcuan (buat nyocokin klik iklan ke chat). Kalau ga mau
+   ada tag itu, atur/hapus di setting CTA dashboard Adcuan.
+
 ## Hal yang Perlu Dicek Setelah Live
 
 - Pastikan `code.js` ga inject widget WA mengambang sendiri yang nabrak tombol
