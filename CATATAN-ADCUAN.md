@@ -119,12 +119,37 @@ User klik tombol
 
 ---
 
-## Status di `index.html` — ✅ TERPASANG (6 Juni 2026)
+## ⚠️ PENTING: Kenapa TANPA script code.js (revisi 6 Juni 2026)
 
-- [x] 8 script `code.js?nomor=1..8` di `<head>`.
+Awalnya 8 script `code.js` dipasang di head. TERNYATA BUG: tiap tombol pesannya
+SAMA SEMUA (klik Paket Harmonis → keluar pesan general).
+
+Penyebab (dari baca isi code.js): script Adcuan melakukan
+`querySelectorAll('[href*="plus.adcuan.com/cta"]')` → ambil SEMUA tombol Adcuan →
+pasang `preventDefault()` + paksa redirect ke config nomor si script. Artinya:
+
+> **Script code.js mendesain 1 nomor/pesan per HALAMAN. Selama script ada,
+> SEMUA tombol buka pesan yang SAMA — walau cuma 1 script. Pasang 8 script malah
+> saling rebutan.**
+
+Pesan per-paket HANYA jalan dari LINK ctawa-nya langsung (server redirect),
+TANPA script. Maka script di-buang.
+
+**Konsekuensi tanpa script:**
+- ✅ 8 link per-paket jalan — tiap tombol pesan beda (sesuai paket).
+- ✅ Klik per-CTA tetap kebaca di dashboard Adcuan (link lewat server Adcuan).
+- ❌ Pixel iklan client-side (FB/TikTok ViewContent/AddToCart) TIDAK nyala.
+- ⚠️ Tag `ID [-]` di awal pesan: tanpa script, placeholder `[-]` muncul apa adanya.
+      → **Buang teks "ID [-]" dari pesan tiap CTA di dashboard Adcuan** biar pesan bersih.
+
+> Kalau nanti butuh pixel iklan maksimal & rela semua tombol 1 pesan: pasang 1
+> script `code.js?nomor=1` di head, terima semua tombol jadi pesan general.
+
+## Status di `index.html` — ✅ 8 LINK PER-PAKET (revisi 6 Juni 2026)
+
+- [x] TANPA script `code.js` (sengaja — biar link per-paket jalan).
 - [x] Keputusan: **GRANULAR — 8 link per-paket**.
-- [x] 12 tombol sudah di-wire ke link Adcuan (param `?text` dibuang, pesan pembuka
-      di-handle Adcuan):
+- [x] 12 tombol di-wire ke link Adcuan (param `?text` dibuang, pesan di dashboard):
   - `854-1` (general) → Hero, Final CTA, Sticky bar, Footer, Float WA (5 tombol)
   - `854-2` → Pesan Paket Harmonis
   - `854-3` → Konsul Dokter Dulu
