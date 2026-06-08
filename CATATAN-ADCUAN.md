@@ -5,6 +5,31 @@
 
 ---
 
+## ✅ ARSITEKTUR FINAL (8 Juni 2026) — baca ini dulu
+
+Setelah ketahuan script Adcuan nge-hijack SEMUA tombol jadi 1 pesan (kalau dipasang
+banyak / dipasang ke tombol paket), keputusan final = **HYBRID**:
+
+- **CTA general → Adcuan.** 1 script `code.js?nomor=1` di `<head>` (bawah baris 10)
+  + 5 tombol general pakai link `https://plus.adcuan.com/ctawa/854-1`:
+  Hero, Final CTA, Sticky bar, Footer, Float WA.
+- **CTA paket → WhatsApp langsung (TANPA Adcuan).** 7 tombol pakai `wa.me/6285111399936?text=...`
+  dengan pesan per-paket: Pesan Harmonis, Konsul Dokter, Mood Stabil, Coba Lengkap,
+  Intimate Care, Pemula Menoherb, Tanya Satuan.
+
+**Kenapa ga bentrok:** script Adcuan cuma "nyangkut" ke tombol yang href-nya mengandung
+`plus.adcuan.com/cta`. Tombol paket pakai `wa.me` → tidak disentuh script → pesan
+per-paket tetap utuh & bersih (tanpa tag `ID [..]`).
+
+**Hasil:**
+- CTA general: tracking iklan Adcuan penuh (pixel FB/TikTok nyala). ✅
+- CTA paket: pesan WhatsApp per-paket rapi, CS langsung tau mau paket apa. ✅
+- 854-2 s/d 854-8 di dashboard Adcuan = TIDAK DIPAKAI lagi (boleh diabaikan/hapus).
+
+> Catatan di bawah ini histori/penjelasan — yang berlaku adalah bagian INI.
+
+---
+
 ## Apa itu Adcuan?
 
 Adcuan = layanan **CTA-WhatsApp tracking & rotator**. Fungsinya:
