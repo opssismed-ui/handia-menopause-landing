@@ -314,10 +314,11 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
   .container{padding:0 16px}
 
   /* HERO */
-  .hero{padding:30px 0 28px}
-  .hero-grid{grid-template-columns:1fr;gap:26px}
-  .hero-visual{order:-1;max-width:330px;margin:0 auto}
-  .hero-card{padding:16px;border-radius:22px;animation:none}
+  .hero{padding:24px 0 28px}
+  .hero-grid{grid-template-columns:1fr;gap:22px}
+  /* Headline & CTA dulu, gambar di bawah — biar value prop kelihatan di layar pertama */
+  .hero-visual{order:0;max-width:280px;margin:4px auto 0}
+  .hero-card{padding:14px;border-radius:20px;animation:none}
   .hero-card h4{font-size:16px}
   .hero-card p{font-size:13px}
   .hero-cta{gap:10px;margin-bottom:18px}
@@ -377,10 +378,8 @@ footer h5{color:#fff;font-size:14px;margin-bottom:14px}
   /* Hide floating WA on mobile — sticky bar already has WA button */
   .float-wa{display:none}
 
-  /* Toast: smaller, sits just above sticky bar, won't cover much */
-  .toast{left:12px;right:12px;bottom:84px;max-width:none;padding:10px 14px;border-radius:12px}
-  .toast .t-ic{width:34px;height:34px;font-size:16px}
-  .toast .t-txt{font-size:12px}
+  /* Toast disembunyikan di mobile — sering nutupin tombol CTA & sticky bar (sumpek) */
+  .toast{display:none !important}
 
   /* Countdown timer a touch smaller */
   .urgency-bar{font-size:12.5px;padding:9px 12px}
